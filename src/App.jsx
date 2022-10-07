@@ -23,7 +23,9 @@ function App() {
       />
      <button onClick={reverse}>Reverse</button>
      <div>
-      {reversedWord && (reversedWord.toLocaleLowerCase() === word.toLocaleLowerCase()? <h1>{word} is a pallendrome</h1>: <h1>{word} is not a pallendrome</h1>)}
+      <h1>{word}</h1>
+      {reversedWord && 
+        (reversedWord.toLocaleLowerCase() === word.toLocaleLowerCase()? <h1> is a pallendrome</h1>: <h1>is not a pallendrome</h1>)}
      </div>
      
     </div>
